@@ -1,0 +1,3 @@
+1° passo, descobrir bibliotecas que me permitam entrar no site da prefeitura e baixar as informações que necessito
+2° ver outra biblioteca que me permita pegar as informações do pdf e armazena-las em variáveis ou até um banco de dados
+3° executar o projeto 
