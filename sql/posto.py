@@ -1,6 +1,6 @@
 SQL_CREATE_POSTO = '''
 CREATE TABLE IF NOT EXISTS posto(
-"id_posto"        INTEGER=?,
+"id_posto"        INTEGER,
 "combustivel"     INTEGER NOT NULL,
 "nome_posto"      TEXT    NOT NULL,
 "endereco_posto"  TEXT    NOT NULL,
