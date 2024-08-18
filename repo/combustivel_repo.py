@@ -7,18 +7,18 @@ from util.conexao import criar_conexao, executar
 def criar_tabela_combustivel():
     try:
         executar(SQL_CREATE_COMBUSTIVEL)
-    except:
-        print("Erro na função criar_tabela")
+    except sqlite3.Error as e:
+        print(f"Erro na função criar_tabela {e}")
     
 
 def obter_todos_combustiveis() -> list[Combustivel]:
     try:
         with criar_conexao() as conexao:
             cursor = conexao.cursor()
-            tupla = cursor.execute(SQL_OBTER_TODOS_COMBUSTIVEIS)
-            return [Combustivel(*t) for t in tupla]
+            tuplas = cursor.execute(SQL_OBTER_TODOS_COMBUSTIVEIS).fetchall()
+            return [Combustivel(*t) for t in tuplas]
     except sqlite3.Error as e:
-        print(f"Erro ao criar na função obter_todos_combustiveis {e}")
+        print(f"Erro ao na função obter_todos_combustiveis {e}")
         return None
 
 def inserir_combustivel(combustivel: Combustivel):
