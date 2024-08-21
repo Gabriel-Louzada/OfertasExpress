@@ -11,4 +11,4 @@ criar_tabela_combustivel_posto()
 app = FastAPI()
 
 
-print("Tudo certo no MAIN")
+print("Tudo certo no MAIN 1111")
