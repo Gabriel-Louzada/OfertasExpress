@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<article class="container-fluid mt-3">
+  <header class="d-flex justify-content-between">
+    <div>
+      <h1>Gasolina Comum</h1>
+    </div>
+    <div>
+      <button type="button" class="btn btn-dark"><a href="index.html"><i class="bi bi-house"></i></a>
+      </button>
+    </div>
+  </header>
+  <hr>
+  <div>
+    <table class="table">
+      <tr>
+        <td>
+          <p><b>Posto</b></p>
+        </td>
+        <td>
+          <p><b>Endereço</b></p>
+        </td>
+        <td>
+          <p><b>Gasolina
+              adv
+            </b></p>
+        </td>
+        <td>
+      </tr>
+      <tr>
+        <td>
+          <p>Posto Alvorada </p>
+        </td>
+        <td>
+          <p>Av. Jones Santos Neves, 237 – Santo Antônio</p>
+        </td>
+        <td>
+          <p>6,89</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+</article>
+  {% endblock %}
