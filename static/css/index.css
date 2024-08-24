@@ -1,0 +1,21 @@
+#navigation .dropdown-menu {
+    background-color: #6c757d !important; /* Background cinza */
+  }
+  
+  #navigation .dropdown-menu .dropdown-item {
+    color: #ffffff !important; /* Texto branco */
+  }
+  
+  #navigation .dropdown-menu .dropdown-item:hover {
+    background-color: #5a6268 !important; /* Cinza escuro ao passar o mouse */
+    color: #ffffff !important; /* Mantém o texto branco */
+  }
+
+  /* Botao home */
+
+ #homebutton {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  /* Digite o endereço */
